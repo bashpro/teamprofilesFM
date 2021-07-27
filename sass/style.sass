@@ -1,0 +1,86 @@
+@import './comps/_profileimg'
+
+$font-colour: #F46E21
+$pt-role-colour: white
+$box-size: 415px
+$box-width: 400px
+$slider-speed: 0.4s
+
+// options: 'blue', 'orange',''(is black)
+$controller: 'orange'
+
+html
+  overflow-x: hidden
+  font-family: arial
+  margin: 0px
+  body, p, a
+    margin: 0px
+    text-decoration: none
+    color: black
+
+.section-holder
+  display: flex
+  min-width: 350px
+  max-width: 1250px
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  margin: auto
+
+.sh-box
+  display: flex
+  min-width: $box-size
+  height: 350px
+  justify-content: center
+  align-items: center
+
+.profile-box
+  width: $box-width
+  height: 325px
+  transition: all $slider-speed ease
+  overflow: hidden
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  &:hover .pro-text
+    margin-top: -50px
+
+.pro-text
+  margin-top: 250px
+  height: 375px
+  width: $box-width
+  transition: all $slider-speed ease
+  text-align: center
+  background: linear-gradient(0deg, rgb(16 8 0 / 60%) 0%, rgba(25, 25, 25, 0.6) 90%, rgba(255, 255, 255, 0) 100%)
+  p
+    margin-bottom: 3px
+
+.pt-name p
+  @if $controller == 'orange'
+    color: $font-colour
+  @else if $controller == 'blue'
+    color: blue
+  @else
+    color: black
+  font-size: 25px
+
+.pt-role p
+  color: $pt-role-colour
+  font-size: 14px
+
+.pt-sec
+  display: flex
+  height: calc(100% - 50px)
+  flex-direction: column
+
+.pts-desc
+  flex: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  p
+    font-size: 14px
+    color: white
+    margin: 0px 25px
+    margin-top: 70px

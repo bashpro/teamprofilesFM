@@ -1,0 +1,22 @@
+include ../includes/mixin.pug
+include ../includes/vars.pug
+
+doctype html
+html(lang='en')
+  head
+    include ../includes/head.pug
+  body
+    .section-holder
+      //- add a profile with the following: +profile(the  variable name) and it'll include them in
+      +profile(charlotte)
+      +profile(bruno)
+      +profile(gavin)
+      +profile(rob)
+      +profile(adam)
+      +profile(bash)
+      //+profile(gareth)
+      +profile(dawid)
+      +profile(jim)
+      +profile(jane)
+      +profile(guy)
+      

@@ -1,0 +1,17 @@
+mixin profile(pro)
+  .sh-box
+    .profile-box(class=`${pro.img}-img`)
+      .pro-text      
+        .pt-name
+          p. 
+            #{pro.name}
+        .pt-role
+          p.
+            #{pro.role}
+        .pt-sec
+          .pts-desc
+            p.
+              #{pro.desc}
+          if pro.link == 'yes'
+            .pts-linked
+              a.linkedin(href= pro.linked target="_blank") icon

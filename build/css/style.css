@@ -1,0 +1,136 @@
+.charlotte-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Charlotte-team-photo-1.png");
+}
+
+.bruno-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Bruno-team-photo-1.png");
+}
+
+.gavin-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Gavin-team-photo-1.png");
+}
+
+.rob-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Rob-team-photo-1.png");
+}
+
+.adam-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Adam-team-photo.png");
+}
+
+.bash-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/06/Basheer-team-photo-1.png");
+  background-size: 350px !important;
+  background-color: #dbdbdb;
+}
+
+.dawid-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Dawid-team-photo-1.png");
+}
+
+.jim-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/jim.jpg");
+  background-position: top !important;
+}
+
+.jane-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Jane-team-photo-1.png");
+  background-position: top !important;
+  background-color: #dbdbdb;
+}
+
+.gareth-img {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/ENG-PAN_%2822%29_%28cropped%29.jpg/220px-ENG-PAN_%2822%29_%28cropped%29.jpg");
+}
+
+.guy-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/Guy-team-photo-1.png");
+}
+
+.dog-img {
+  background: url("https://freshmango.co.uk/wp-content/uploads/2021/02/trix.jpg");
+}
+
+html {
+  overflow-x: hidden;
+  font-family: arial;
+  margin: 0px;
+}
+html body, html p, html a {
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+.section-holder {
+  display: flex;
+  min-width: 350px;
+  max-width: 1250px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.sh-box {
+  display: flex;
+  min-width: 415px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box {
+  width: 400px;
+  height: 325px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-box:hover .pro-text {
+  margin-top: -50px;
+}
+
+.pro-text {
+  margin-top: 250px;
+  height: 375px;
+  width: 400px;
+  transition: all 0.4s ease;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(16, 8, 0, 0.6) 0%, rgba(25, 25, 25, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+}
+.pro-text p {
+  margin-bottom: 3px;
+}
+
+.pt-name p {
+  color: #F46E21;
+  font-size: 25px;
+}
+
+.pt-role p {
+  color: white;
+  font-size: 14px;
+}
+
+.pt-sec {
+  display: flex;
+  height: calc(100% - 50px);
+  flex-direction: column;
+}
+
+.pts-desc {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pts-desc p {
+  font-size: 14px;
+  color: white;
+  margin: 0px 25px;
+  margin-top: 70px;
+}
