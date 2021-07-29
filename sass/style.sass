@@ -2,9 +2,10 @@
 
 $font-colour: #F46E21
 $pt-role-colour: white
-$box-size: 415px
-$box-width: 400px
+$box-size: 365px
+$box-width: 350px
 $slider-speed: 0.4s
+$linked-size: 45px
 
 // options: 'blue', 'orange',''(is black)
 $controller: 'orange'
@@ -21,7 +22,7 @@ html
 .section-holder
   display: flex
   min-width: 350px
-  max-width: 1250px
+  max-width: 1140px
   flex-wrap: wrap
   flex-direction: row
   justify-content: center
@@ -44,12 +45,13 @@ html
   background-repeat: no-repeat
   background-position: center
   &:hover .pro-text
-    margin-top: -50px
+    margin-top: -70px
 
 .pro-text
   margin-top: 250px
-  height: 375px
+  height: 395px
   width: $box-width
+  user-select: none
   transition: all $slider-speed ease
   text-align: center
   background: linear-gradient(0deg, rgb(16 8 0 / 60%) 0%, rgba(25, 25, 25, 0.6) 90%, rgba(255, 255, 255, 0) 100%)
@@ -77,6 +79,7 @@ html
 .pts-desc
   flex: 1
   display: flex
+  flex-direction: column
   justify-content: center
   align-items: center
   p
@@ -84,3 +87,18 @@ html
     color: white
     margin: 0px 25px
     margin-top: 70px
+
+.pts-linked
+  height: $linked-size
+  width: $linked-size
+  margin-top: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.fa.fa-linkedin
+  font-size: 20px
+  transition: all 0.3s ease
+  color: grey
+  &:hover
+    color: $font-colour

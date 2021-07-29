@@ -12,6 +12,7 @@ mixin profile(pro)
           .pts-desc
             p.
               #{pro.desc}
-          if pro.link == 'yes'
-            .pts-linked
-              a.linkedin(href= pro.linked target="_blank") icon
+            if pro.link == 'yes'
+              .pts-linked
+                a(href= pro.linked target="_blank")
+                  i.fa.fa-linkedin 
